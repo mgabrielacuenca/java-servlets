@@ -1,6 +1,8 @@
 package br.com.alura.gerenciador.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +16,18 @@ public class MostraEmpresaServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+		String paramId = request.getParameter("id");
+		Integer id = Integer.valueOf(paramId);
 
+		Banco banco = new Banco();
+
+		Empresa empresa = banco.buscaEmpresaPelaId(id);
+
+		System.out.println(empresa.getNome());
+
+		request.setAttribute("empresa", empresa);
+
+		RequestDispatcher rd = request.getRequestDispatcher("/formAlteraEmpresa.jsp");
+		rd.forward(request, response);
+	}
 }

@@ -6,17 +6,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Lista de Empresas Cadastradas</title>
+	<title>Lista de Empresas Cadastradas</title>
+	<link rel="stylesheet" type="text/css" href="css/listaEmpresas.css">
 </head>
 <body>
 
-	<c:if test="${not empty empresa}">
-            Empresa ${ empresa } cadastrada com sucesso!
-    </c:if>
+	<main>
+    <div>
+		<c:if test="${not empty empresa}">
+	            Empresa ${ empresa } cadastrada com sucesso!
+	    </c:if>
+	</div>
 
-
-	Lista de empresas:
-	<br />
+<p>Lista de Empresas</p>
 
 	<ul>
 		<c:forEach items="${empresas}" var="empresa">
@@ -29,6 +31,8 @@
 
 		</c:forEach>
 	</ul>
+
+    </main>
 
 </body>
 </html>

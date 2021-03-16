@@ -1,0 +1,51 @@
+main {
+	border-style: solid;
+	margin: 20px 20px 20px 20px;
+	height: auto;
+	width: 100%;
+	background-color: #A9A9A9;
+	display: block;
+	text-align: center;
+}
+
+div {
+	margin-top: 70px;
+	font-style: bold;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 20px;
+	margin-top: 3em;
+}
+
+body {
+	text-align: center;
+	width: 960px;
+	height: 600px;
+	margin: 0 auto 0 auto;
+	display: block;
+}
+
+ul {
+	display: inline-block;
+	margin-bottom: 2em;
+	margin-top: 2em;
+	font-size: 18px;
+	transition: all .5s;
+	border: 10px solid transparent;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px 10px 10px 10px
+}
+
+ul:hover {
+	border: 3px solid #136497;
+	border-radius: 10%;
+}
+
+li{
+	padding-bottom: 10px;
+}

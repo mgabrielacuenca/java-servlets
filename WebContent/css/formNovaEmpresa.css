@@ -1,0 +1,38 @@
+div{
+	width: 500px;
+	height: 450px;
+	background-color: #808080;
+	margin: 0 auto 0 auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 15px 15px 15px 15px;
+	text-align: center;
+}
+
+.titulo{
+	font-size: 24px;
+	line-height: 3em;
+}
+
+legend{
+	font-size: 20px;
+	padding-bottom: 1em;
+}
+
+.enviar{
+	display: block;
+	padding: 15px 50px 15px 50px;
+	margin: 20px auto 0 auto;
+	border: none;
+	border-radius: 5px;
+	transition: 1s;
+}
+
+.enviar:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.data{
+	margin-top: 20px
+}

@@ -4,21 +4,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Cadastrar Empresa</title>
+    <title>Cadastro Empresa</title>
+    <link rel="stylesheet" type="text/css" href="css/formNovaEmpresa.css"/>
+    <link rel="stylesheet" href="">
 </head>
-
 <body>
-
-	<form action="${linkServletNovaEmpresa}" method="POST">
-
-		Nome: <input type="text" name="nome">
-		<br/>
-		Data Abertura: <input type="text" name="data">
-
-		<button type="submit">Enviar</button>
-
-	</form>
+    <div>
+    <a class="titulo">Cadastre aqui</a>
+            <legend>Nome da Empresa</legend>
+            
+        <form action="${linkServletNovaEmpresa}" method="POST">   
+         
+        <input type="text" name="nome" required placeholder="Nome da Empresa">
+        
+        <legend class="data">Data Abertura</legend>
+        <input type="text" name="data" required placeholder="Data">
+        <button class="enviar" type="submit">Enviar</button>
+        </form>
+    </div>
 
 </body>
 </html>
